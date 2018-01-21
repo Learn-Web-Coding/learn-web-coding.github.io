@@ -52,11 +52,3 @@ div.tutorials-dropmenu, div.examples-dropmenu {
 .dropdown-item-list-title {
 	font-size: 20px; 
 }
-
-.jumbotron .jumbo-content-container {
-	float: left;
-	width: 50%;
-}
-.jumbotron .img-container img {
-	height: 300px;
-}
