@@ -13,15 +13,72 @@
 
 	<nav class="navbar justify-content-between blue">
   		<a class="navbar-brand" href="index.html">Learn Web Coding</a>
-    		<button class="btn btn-outline-light my-2 my-sm-0 search-btn-large-devices" type="submit">Search</button>
+    		<button class="btn btn-outline-light my-2 my-sm-0 search-btn-large-devices" data-toggle="modal" data-target="#search-modal">Search</button>
 	</nav>
 
+	<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="exampleModalLongTitle">Search</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true"><i class="material-icons">close</i></span>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+      				<div class="input-group mb-3">
+  						<input type="text" class="form-control" placeholder="Tutorial Name" aria-label="Tutorial Name" aria-describedby="basic-addon2">
+  						<div class="input-group-append">
+    						<button class="btn btn-outline-secondary" type="button">Search</button>
+  						</div>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
+	<div class="modal fade" id="navModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<h5 class="modal-title" id="exampleModalLabel">Navigation</h5>
+        			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<i class="material-icons">close</i>
+        			</button>
+      			</div>
+      			<div class="modal-body">
+      				<ul class="list-group mobile-nav" style="padding-bottom: 10px;">
+  						<li class="list-group-item" style="text-align: center; font-size: 20px;"><a href="index.html">Home</a></li>
+					</ul>
+        			<ul class="list-group mobile-nav" style="padding-bottom: 10px;">
+  						<li class="list-group-item" style="text-align: center; font-size: 20px;">Tutorials</li>
+  						<li class="list-group-item"><a href="Courses/HTML/html1.html">HTML Tutorial</a></li>
+  						<li class="list-group-item">CSS Examples</li>
+  						<li class="list-group-item">JavaScript Tutorial</li>
+					</ul>
+					<ul class="list-group mobile-nav">
+  						<li class="list-group-item" style="text-align: center; font-size: 20px;">Examples</li>
+  						<li class="list-group-item">HTML Examples</li>
+  						<li class="list-group-item">CSS Examples</li>
+  						<li class="list-group-item">JavaScript Examples</li>
+					</ul>
+      			</div>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+    		</div>
+  		</div>
+	</div>
+
 	<nav class="sticky-top navbar navbar-expand-lg navbar-light bg-light">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
+  		<button data-toggle="modal" data-target="#navModal" class="navbar-toggler" type="button">
+    		<i class="material-icons">menu</i>
   		</button>
-  		<button class="btn btn-outline-dark my-2 my-sm-0 search-btn-small-devices" type="submit">Search</button>
-  		<div class="collapse navbar-collapse" id="navbarNav">
+  		<button class="btn btn-outline-dark my-2 my-sm-0 search-btn-small-devices" type="submit" data-toggle="modal" data-target="#search-modal">Search</button>
+  		<div class="collapse navbar-collapse">
     		<ul class="navbar-nav">
       			<li class="nav-item active first">
         			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>

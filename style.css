@@ -69,6 +69,16 @@ button.search-btn-small-devices {
 	display: none;
 }
 
+ul.mobile-nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+ul.mobile-nav li a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
     .navbar-brand {
     	border: none;
