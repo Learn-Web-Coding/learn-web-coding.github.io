@@ -52,3 +52,32 @@ div.tutorials-dropmenu, div.examples-dropmenu {
 .dropdown-item-list-title {
 	font-size: 20px; 
 }
+
+button.search-btn-large-devices {
+	display: inline-block;
+}
+
+button.search-btn-small-devices {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-brand {
+    	border: none;
+    }
+    .search-form {
+    	display: none;
+    }
+    .jumbotron img {
+    	display: none;
+    }
+    .jumbotron .jumbo-content-container {
+    	float: none;
+    }
+    button.search-btn-small-devices {
+    	display: inline-block;
+    }
+    button.search-btn-large-devices {
+    	display: none;
+    }
+}
